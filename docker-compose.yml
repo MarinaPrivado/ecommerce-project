@@ -12,17 +12,19 @@ services:
   backend:
     build: ./backend
     ports:
-      - "8000:8000"
+      - "8081:8000"
     volumes:
       - ./backend:/var/www
+      - /var/www/vendor
     environment:
-      DB_HOST: banco
+      DB_CONNECTION: mysql
+      DB_HOST: BD
       DB_PORT: 3306
       DB_DATABASE: ecommerce
       DB_USERNAME: ecommerce_user
       DB_PASSWORD: senha123
     depends_on:
-      - banco
+      - BD
 
   BD:
     image: mysql:8.0
@@ -34,7 +36,7 @@ services:
       MYSQL_USER: ecommerce_user
       MYSQL_PASSWORD: senha123
     volumes:
-      - ./banco:/docker-entrypoint-initdb.d
+      - ./BD:/docker-entrypoint-initdb.d
       - mysql_data:/var/lib/mysql
 
 volumes:
