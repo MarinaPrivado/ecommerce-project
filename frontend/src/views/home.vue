@@ -1,6 +1,6 @@
 <script setup>
 import{useRouter} from"vue-router";
-import logo from "@src/img/nexvolt_logo.svg";
+import logo from "@/img/nexvolt_logo.svg";
 
 
 const router = useRouter();

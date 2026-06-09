@@ -1,16 +1,11 @@
 <script setup lang="ts">
-import { RouterView } from "vue-router";
-import Home from "./views/home.vue";
-import Listagem from "./views/listagem.vue";
-
+import { RouterLink, RouterView } from "vue-router";
 </script>
 
 <template>
-  <home/>
-
+  <nav class="flex justify-center gap-4 p-4 border-b">
+    <RouterLink to="/" class="text-blue-600 hover:underline">Home</RouterLink>
+    <RouterLink to="/listagem" class="text-blue-600 hover:underline">Listagem</RouterLink>
+  </nav>
+  <RouterView />
 </template>
-
-
-<style>
-@import "tailwindcss";
-</style>

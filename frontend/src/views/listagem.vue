@@ -2,9 +2,9 @@
 <template>
     <div class="card flex flex-col items-center overflow-hidden">
         <div class="flex flex-col items-center gap-2">
-            <span class="text-xl font-medium">Scroll Down</span>
-            <span class="animate-bounce h-8 w-8 bg-primary text-primary-contrast rounded-full inline-flex items-center justify-center">
-                <i class="pi pi-arrow-down" />
+            <span class="text-xl font-medium">Role para baixo</span>
+            <span class="animate-bounce h-8 w-8 bg-[#782E9F] text-white rounded-full inline-flex items-center justify-center">
+                <i class="pi pi-arrow-down"/>
             </span>
         </div>
         <div class="h-[30rem]"></div>
