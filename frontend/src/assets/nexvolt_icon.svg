@@ -1,0 +1,36 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- background -->
+  <rect width="200" height="200" rx="40" fill="#181B59"/>
+
+  <!-- chip frame -->
+  <rect x="45" y="45" width="110" height="110" rx="12" fill="none" stroke="#782E9F" stroke-width="3"/>
+
+  <!-- pins left -->
+  <line x1="45" y1="65" x2="25" y2="65" stroke="#E9A0F2" stroke-width="2.5"/>
+  <line x1="45" y1="85" x2="25" y2="85" stroke="#E9A0F2" stroke-width="2.5"/>
+  <line x1="45" y1="105" x2="25" y2="105" stroke="#E9A0F2" stroke-width="2.5"/>
+  <line x1="45" y1="125" x2="25" y2="125" stroke="#E9A0F2" stroke-width="2.5"/>
+
+  <!-- pins right -->
+  <line x1="155" y1="65" x2="175" y2="65" stroke="#E9A0F2" stroke-width="2.5"/>
+  <line x1="155" y1="85" x2="175" y2="85" stroke="#E9A0F2" stroke-width="2.5"/>
+  <line x1="155" y1="105" x2="175" y2="105" stroke="#E9A0F2" stroke-width="2.5"/>
+  <line x1="155" y1="125" x2="175" y2="125" stroke="#E9A0F2" stroke-width="2.5"/>
+
+  <!-- pins top -->
+  <line x1="75" y1="45" x2="75" y2="25" stroke="#E9A0F2" stroke-width="2.5"/>
+  <line x1="100" y1="45" x2="100" y2="25" stroke="#E9A0F2" stroke-width="2.5"/>
+  <line x1="125" y1="45" x2="125" y2="25" stroke="#E9A0F2" stroke-width="2.5"/>
+
+  <!-- pins bottom -->
+  <line x1="75" y1="155" x2="75" y2="175" stroke="#E9A0F2" stroke-width="2.5"/>
+  <line x1="100" y1="155" x2="100" y2="175" stroke="#E9A0F2" stroke-width="2.5"/>
+  <line x1="125" y1="155" x2="125" y2="175" stroke="#E9A0F2" stroke-width="2.5"/>
+
+  <!-- inner core -->
+  <rect x="63" y="63" width="74" height="74" rx="6" fill="#782E9F" opacity="0.25"/>
+  <rect x="63" y="63" width="74" height="74" rx="6" fill="none" stroke="#782E9F" stroke-width="1.5"/>
+
+  <!-- lightning bolt -->
+  <polygon points="107,72 89,100 101,100 93,128 117,104 105,104" fill="#E9A0F2"/>
+</svg>
