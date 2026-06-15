@@ -1,0 +1,28 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" rx="40" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1"/>
+
+  <rect x="45" y="45" width="110" height="110" rx="12" fill="none" stroke="#782E9F" stroke-width="3"/>
+
+  <line x1="45" y1="65" x2="25" y2="65" stroke="#2A3A7B" stroke-width="2.5"/>
+  <line x1="45" y1="85" x2="25" y2="85" stroke="#2A3A7B" stroke-width="2.5"/>
+  <line x1="45" y1="105" x2="25" y2="105" stroke="#2A3A7B" stroke-width="2.5"/>
+  <line x1="45" y1="125" x2="25" y2="125" stroke="#2A3A7B" stroke-width="2.5"/>
+
+  <line x1="155" y1="65" x2="175" y2="65" stroke="#2A3A7B" stroke-width="2.5"/>
+  <line x1="155" y1="85" x2="175" y2="85" stroke="#2A3A7B" stroke-width="2.5"/>
+  <line x1="155" y1="105" x2="175" y2="105" stroke="#2A3A7B" stroke-width="2.5"/>
+  <line x1="155" y1="125" x2="175" y2="125" stroke="#2A3A7B" stroke-width="2.5"/>
+
+  <line x1="75" y1="45" x2="75" y2="25" stroke="#2A3A7B" stroke-width="2.5"/>
+  <line x1="100" y1="45" x2="100" y2="25" stroke="#2A3A7B" stroke-width="2.5"/>
+  <line x1="125" y1="45" x2="125" y2="25" stroke="#2A3A7B" stroke-width="2.5"/>
+
+  <line x1="75" y1="155" x2="75" y2="175" stroke="#2A3A7B" stroke-width="2.5"/>
+  <line x1="100" y1="155" x2="100" y2="175" stroke="#2A3A7B" stroke-width="2.5"/>
+  <line x1="125" y1="155" x2="125" y2="175" stroke="#2A3A7B" stroke-width="2.5"/>
+
+  <rect x="63" y="63" width="74" height="74" rx="6" fill="#782E9F" opacity="0.12"/>
+  <rect x="63" y="63" width="74" height="74" rx="6" fill="none" stroke="#782E9F" stroke-width="1.5"/>
+
+  <polygon points="107,72 89,100 101,100 93,128 117,104 105,104" fill="#782E9F"/>
+</svg>
