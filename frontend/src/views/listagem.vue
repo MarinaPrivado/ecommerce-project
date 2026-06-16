@@ -1,124 +1,92 @@
-
-<template>
-    <div class="card flex flex-col items-center overflow-hidden">
-        <div class="flex flex-col items-center gap-2">
-            <span class="text-xl font-medium">Role para baixo</span>
-            <span class="animate-bounce h-8 w-8 bg-[#782E9F] text-white rounded-full inline-flex items-center justify-center">
-                <i class="pi pi-arrow-down"/>
-            </span>
-        </div>
-        <div class="h-[30rem]"></div>
-        <div class="flex flex-wrap justify-center gap-8">
-            <div
-                v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-l-8 animate-duration-1000', leaveClass: 'animate-leave fade-out-0' }"
-                class="flex flex-col border border-surface shadow-lg justify-center items-center max-w-80 rounded-2xl p-8 gap-4"
-            >
-                <div class="rounded-full bg-primary text-primary-contrast w-12 h-12 flex items-center justify-center">
-                    <i class="pi pi-user !text-2xl"></i>
-                </div>
-                <span class="text-2xl font-bold">Individual</span>
-                <span class="text-muted-color text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-            </div>
-            <div
-                v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 animate-duration-1000', leaveClass: 'animate-leave fade-out-0' }"
-                class="flex flex-col border border-surface shadow-lg justify-center items-center max-w-80 rounded-2xl p-8 gap-4"
-            >
-                <div class="rounded-full bg-primary text-primary-contrast w-12 h-12 flex items-center justify-center">
-                    <i class="pi pi-users !text-2xl"></i>
-                </div>
-                <span class="text-2xl font-bold">Team</span>
-                <span class="text-muted-color text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-            </div>
-            <div
-                v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-r-8 animate-duration-1000', leaveClass: 'animate-leave fade-out-0' }"
-                class="flex flex-col border border-surface shadow-lg justify-center items-center max-w-80 rounded-2xl p-8 gap-4"
-            >
-                <div class="rounded-full bg-primary text-primary-contrast w-12 h-12 flex items-center justify-center">
-                    <i class="pi pi-building !text-2xl"></i>
-                </div>
-                <span class="text-2xl font-bold">Enterprise</span>
-                <span class="text-muted-color text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-            </div>
-        </div>
-        <div class="h-[30rem]"></div>
-        <div class="flex flex-wrap justify-center gap-8">
-            <div v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-t-20 animate-duration-1000' }" class="flex flex-col border border-primary-200 shadow-lg justify-center items-center max-w-80 rounded-2xl p-8 gap-4">
-                <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" shape="circle" size="xlarge" />
-                <span class="text-2xl font-medium">Jenna Thompson</span>
-                <span class="text-muted-color text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-            </div>
-            <div v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-b-20 animate-duration-1000' }" class="flex flex-col border border-primary-200 shadow-lg justify-center items-center max-w-80 rounded-2xl p-8 gap-4">
-                <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/asiyajavayant.png" shape="circle" size="xlarge" />
-                <span class="text-2xl font-medium">Isabel Garcia</span>
-                <span class="text-muted-color text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-            </div>
-            <div v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-t-20 animate-duration-1000' }" class="flex flex-col border border-primary-200 shadow-lg justify-center items-center max-w-80 rounded-2xl p-8 gap-4">
-                <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/onyamalimba.png" shape="circle" size="xlarge" />
-                <span class="text-2xl font-medium">Xavier Mason</span>
-                <span class="text-muted-color text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-            </div>
-        </div>
-        <div class="h-[30rem]"></div>
-        <div class="flex flex-wrap justify-center gap-8">
-            <div
-                v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 spin-in-45 slide-in-from-t-12 animate-duration-1000' }"
-                class="flex flex-col bg-primary text-primary-contrast border-primary shadow-lg justify-center items-center max-w-80 rounded-2xl p-8 gap-4"
-            >
-                <span class="bg-white/20 text-xl font-medium rounded-xl px-4 py-2">850K</span>
-                <span class="text-2xl font-bold">Customers</span>
-                <span class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-            </div>
-            <div
-                v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 zoom-in-50 slide-in-from-t-20 animate-duration-1000' }"
-                class="flex flex-col bg-primary text-primary-contrast border-primary shadow-lg justify-center items-center max-w-80 rounded-2xl p-8 gap-4"
-            >
-                <span class="bg-white/20 text-xl font-medium rounded-xl px-4 py-2">$1.5M</span>
-                <span class="text-2xl font-bold">Revenue</span>
-                <span class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-            </div>
-            <div
-                v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 spin-in-[-45deg] slide-in-from-t-16 animate-duration-1000' }"
-                class="flex flex-col bg-primary text-primary-contrast border-primary shadow-lg justify-center items-center max-w-80 rounded-2xl p-8 gap-4"
-            >
-                <span class="bg-white/20 text-xl font-medium rounded-xl px-4 py-2">140K</span>
-                <span class="text-2xl font-bold">Sales</span>
-                <span class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-            </div>
-        </div>
-        <div class="h-[30rem]"></div>
-        <div class="flex flex-wrap justify-center gap-8">
-            <div v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 zoom-in-50 animate-duration-1000' }" class="flex flex-col bg-purple-500 text-white border-purple-500 shadow-lg justify-center items-center max-w-80 rounded-2xl p-8 gap-4">
-                <div class="rounded-full border-2 border-white w-12 h-12 flex items-center justify-center">
-                    <i class="pi pi-wifi !text-2xl"></i>
-                </div>
-                <span class="text-2xl font-bold">Bandwidth</span>
-                <span class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-            </div>
-            <div v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 zoom-in-75 animate-duration-1000' }" class="flex flex-col bg-teal-500 text-white border-teal-500 shadow-lg justify-center items-center max-w-80 rounded-2xl p-8 gap-4">
-                <div class="rounded-full border-2 border-white w-12 h-12 flex items-center justify-center">
-                    <i class="pi pi-database !text-2xl"></i>
-                </div>
-                <span class="text-2xl font-bold">Storage</span>
-                <span class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-            </div>
-            <div v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 zoom-in-50 animate-duration-1000' }" class="flex flex-col bg-indigo-500 text-white border-indigo-500 shadow-lg justify-center items-center max-w-80 rounded-2xl p-8 gap-4">
-                <div class="rounded-full border-2 border-white w-12 h-12 flex items-center justify-center">
-                    <i class="pi pi-arrows-v !text-2xl"></i>
-                </div>
-                <span class="text-2xl font-bold">Requests</span>
-                <span class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-            </div>
-        </div>
-    </div>
-</template>
-
 <script setup lang="ts">
-import Avatar from 'primevue/avatar'
-import AnimateOnScroll from 'primevue/animateonscroll'
+import { computed, ref } from 'vue'
+import { RouterLink } from 'vue-router'
+import { categories, formatCurrency, products } from '@/data/catalog'
 
-const vAnimateOnScroll = AnimateOnScroll
+const search = ref('')
+const selectedCategory = ref('Todos')
+
+const filteredProducts = computed(() =>
+  products.filter((product) => {
+    const matchesSearch = product.name.toLowerCase().includes(search.value.toLowerCase())
+    const matchesCategory =
+      selectedCategory.value === 'Todos' || product.category === selectedCategory.value
+
+    return matchesSearch && matchesCategory
+  }),
+)
 </script>
 
-<style> @import "tailwindcss";
-@import "tailwindcss-primeui";
-</style>
+<template>
+  <main class="store-shell">
+    <section class="page-hero">
+      <RouterLink class="ghost-button" to="/">
+        <i class="pi pi-arrow-left"></i>
+        Home
+      </RouterLink>
+      <h1>Vitrine de <span>produtos</span></h1>
+      <p>
+        Pagina estatica da etapa 1 com listagem, filtros visuais e navegacao
+        para detalhes e carrinho.
+      </p>
+    </section>
+
+    <section class="page-section">
+      <div class="filters">
+        <input
+          v-model="search"
+          class="search-input"
+          type="search"
+          placeholder="Buscar produto"
+          aria-label="Buscar produto"
+        />
+        <button
+          class="secondary-button"
+          :class="{ 'primary-button': selectedCategory === 'Todos' }"
+          type="button"
+          @click="selectedCategory = 'Todos'"
+        >
+          Todos
+        </button>
+        <button
+          v-for="category in categories"
+          :key="category.name"
+          class="secondary-button"
+          :class="{ 'primary-button': selectedCategory === category.name }"
+          type="button"
+          @click="selectedCategory = category.name"
+        >
+          {{ category.name }}
+        </button>
+      </div>
+
+      <div class="product-grid">
+        <article v-for="product in filteredProducts" :key="product.id" class="product-card">
+          <div class="product-image">
+            <span v-if="product.badge" class="badge">{{ product.badge }}</span>
+            <i class="pi" :class="product.icon"></i>
+          </div>
+          <div class="product-info">
+            <span class="muted">{{ product.brand }} / {{ product.category }}</span>
+            <h3>{{ product.name }}</h3>
+            <span class="rating">{{ product.rating }} / 5</span>
+            <div class="price-row">
+              <span class="price">{{ formatCurrency(product.price) }}</span>
+              <span v-if="product.oldPrice" class="old-price">
+                {{ formatCurrency(product.oldPrice) }}
+              </span>
+            </div>
+            <div class="hero-actions">
+              <RouterLink class="primary-button" :to="`/produtos/${product.id}`">
+                Detalhes
+              </RouterLink>
+              <RouterLink class="secondary-button" to="/carrinho" aria-label="Ir para carrinho">
+                <i class="pi pi-shopping-cart"></i>
+              </RouterLink>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+</template>
