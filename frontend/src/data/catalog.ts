@@ -20,6 +20,7 @@ export type Client = {
   phone: string
   status: 'Ativo' | 'Inativo'
   city: string
+  adress: string
 }
 
 export const categories = [
