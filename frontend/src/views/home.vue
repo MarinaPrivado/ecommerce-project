@@ -16,7 +16,7 @@ const featuredProduct = products[0] as Product
     <nav class="store-nav" aria-label="Navegacao principal">
       <RouterLink class="store-logo" to="/">
         <img :src="logo" alt="NexVolt" />
-        <span>NexVolt</span>
+      
       </RouterLink>
 
       <div class="store-links" >
@@ -42,11 +42,10 @@ const featuredProduct = products[0] as Product
           <i class="pi pi-sparkles"></i>
           Tecnologia selecionada
         </span>
-        <h1>Eletronicos para montar seu <span>setup ideal</span>.</h1>
-        <p>
-          Loja virtual com vitrine, detalhes de produtos, carrinho e area de
-          administracao pronta para evoluir com Vue, Laravel e MySQL.
-        </p>
+        <h1>Eletrônicos para montar seu <span>setup ideal</span>.</h1>
+        
+       
+        
         <div class="hero-actions">
           <RouterLink class="primary-button" to="/listagem">
             Ver produtos
