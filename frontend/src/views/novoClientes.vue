@@ -59,8 +59,8 @@ const removeClient = (id: number) => {
         <i class="pi pi-arrow-left"></i>
         Home
       </RouterLink>
-      <h1>CRUD de <span>clientes</span></h1>
-      <p>Cadastro inicial de clientes para conectar depois ao back-end Laravel.</p>
+      <h1>Área de <span>clientes</span></h1>
+      >
     </section>
 
     <section class="page-section crud-layout">
@@ -68,7 +68,7 @@ const removeClient = (id: number) => {
         <div class="page-header">
           <div>
             <h2>{{ editingId ? 'Editar cliente' : 'Novo cliente' }}</h2>
-            <p>Dados principais da tabela clientes.</p>
+            <p>Dados principais dos clientes.</p>
           </div>
         </div>
 
@@ -109,35 +109,10 @@ const removeClient = (id: number) => {
         </div>
       </form>
 
-      <div class="crud-panel">
-        <div class="page-header">
-          <div>
-            <h2>Clientes cadastrados</h2>
-            <p>{{ clientList.length }} registros.</p>
-          </div>
-        </div>
+       
 
-        <div v-for="client in clientList" :key="client.id" class="admin-row">
-          <div class="item-icon">
-            <i class="pi pi-user"></i>
-          </div>
-          <div>
-            <strong>{{ client.name }}</strong>
-            <p class="muted">{{ client.email }} / {{ client.phone }} / {{ client.city }}</p>
-            <span class="status-pill" :class="{ inactive: client.status === 'Inativo' }">
-              {{ client.status }}
-            </span>
-          </div>
-          <div class="table-actions">
-            <button class="secondary-button" type="button" @click="editClient(client)">
-              <i class="pi pi-pencil"></i>
-            </button>
-            <button class="danger-button" type="button" @click="removeClient(client.id)">
-              <i class="pi pi-trash"></i>
-            </button>
-          </div>
-        </div>
-      </div>
+        
+      
     </section>
-  </main>
+  </main> 
 </template>

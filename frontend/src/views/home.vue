@@ -19,12 +19,11 @@ const featuredProduct = products[0] as Product
         <span>NexVolt</span>
       </RouterLink>
 
-      <div class="store-links">
+      <div class="store-links" >
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/listagem">Produtos</RouterLink>
         <RouterLink to="/carrinho">Carrinho</RouterLink>
-        <RouterLink to="/admin/produtos">Admin</RouterLink>
-        <RouterLink to="/clientes">Clientes</RouterLink>
+      
       </div>
 
       <div class="store-actions">
@@ -54,7 +53,8 @@ const featuredProduct = products[0] as Product
             <i class="pi pi-arrow-right"></i>
           </RouterLink>
           <RouterLink class="ghost-button" to="/admin/produtos">
-            CRUD admin
+            Área do administrador
+            <i class="pi pi-arrow-right"></i>
           </RouterLink>
         </div>
         <div class="hero-stats" aria-label="Indicadores da loja">
@@ -152,9 +152,7 @@ const featuredProduct = products[0] as Product
           <h2 class="section-title">Produtos em destaque</h2>
           <p class="section-subtitle">Cards conectados as paginas de detalhes</p>
         </div>
-        <RouterLink class="secondary-button" to="/admin/produtos">
-          Gerenciar produtos
-        </RouterLink>
+        <RouterLink class="secondary-button" to="/listagem">Ver vitrine</RouterLink>
       </div>
       <div class="product-grid">
         <article v-for="product in products" :key="product.id" class="product-card">
@@ -180,25 +178,12 @@ const featuredProduct = products[0] as Product
       </div>
     </section>
 
-    <section class="section">
-      <div class="banner-grid">
-        <div class="banner">
-          <span class="eyebrow">Area administrativa</span>
-          <h2>CRUD de produtos para o admin acompanhar estoque e precos.</h2>
-          <RouterLink class="primary-button" to="/admin/produtos">Abrir admin</RouterLink>
-        </div>
-        <div class="banner secondary">
-          <span class="eyebrow">Clientes</span>
-          <h2>Cadastro de clientes separado para evoluir com banco de dados.</h2>
-          <RouterLink class="ghost-button" to="/clientes">Abrir clientes</RouterLink>
-        </div>
-      </div>
-    </section>
+    
 
     <footer class="footer">
       <div>
         <strong>NexVolt</strong>
-        <p>Projeto e-commerce separado em front-end Vue, back-end Laravel e BD MySQL.</p>
+        <p>Projeto e-commerce.</p>
       </div>
       <div>
         <strong>Loja</strong>
