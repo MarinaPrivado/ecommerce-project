@@ -65,7 +65,7 @@ const decrease = (id: number) => {
         </div>
         <div class="summary-row">
           <span>Frete</span>
-          <strong>{{ shipping === 0 ? 'Gratis' : formatCurrency(shipping) }}</strong>
+          <strong>{{ shipping === 0 ? 'Grátis' : formatCurrency(shipping) }}</strong>
         </div>
         <div class="summary-row total">
           <span>Total</span>

@@ -26,10 +26,10 @@ export type Client = {
 export const categories = [
   { name: 'Notebooks', icon: 'pi-desktop', count: 18 },
   { name: 'Smartphones', icon: 'pi-mobile', count: 24 },
-  { name: 'Perifericos', icon: 'pi-keyboard', count: 31 },
+  { name: 'Periféricos', icon: 'pi-sliders-h', count: 31 },
   { name: 'Componentes', icon: 'pi-microchip', count: 16 },
-  { name: 'Audio', icon: 'pi-volume-up', count: 12 },
-  { name: 'Acessorios', icon: 'pi-box', count: 27 },
+  { name: 'Áudio', icon: 'pi-volume-up', count: 12 },
+  { name: 'Acessórios', icon: 'pi-box', count: 27 },
 ]
 
 export const products: Product[] = [
@@ -67,11 +67,11 @@ export const products: Product[] = [
     id: 3,
     name: 'Teclado Mecanico Spark RGB',
     brand: 'KeyLab',
-    category: 'Perifericos',
+    category: 'Periféricos',
     price: 349.9,
     rating: 4.6,
     stock: 34,
-    icon: 'pi-keyboard',
+    icon: 'pi-sliders-h',
     description:
       'Teclado mecanico compacto com iluminacao RGB, switches tateis e estrutura reforcada.',
     specs: ['Switch brown', 'RGB', 'Layout ABNT2', 'USB-C'],
@@ -80,7 +80,7 @@ export const products: Product[] = [
     id: 4,
     name: 'Headset NovaSound Pro',
     brand: 'SoundPeak',
-    category: 'Audio',
+    category: 'Áudio',
     price: 289.9,
     oldPrice: 329.9,
     rating: 4.5,

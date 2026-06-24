@@ -9,12 +9,8 @@ import { RouterLink } from 'vue-router'
         <i class="pi pi-arrow-left"></i>
         Home
       </RouterLink>
-      <h1>Acesso à <span>NexVolt</span></h1>
-      <p>Novo por aqui? Realize seu cadastro.</p>     
-
-    <div class="form-actions">
-          <RouterLink class="primary-button" to="/signup">Realizar cadastro</RouterLink>
-         </div>
+      <h1>Realizar cadastro</h1>
+      <p>Crie sua conta para acessar os benefícios de ser um cliente registrado.</p>
     </section>
 
     <section class="page-section">
@@ -32,11 +28,18 @@ import { RouterLink } from 'vue-router'
             Repetir Senha
             <input type="password" placeholder="Digite sua senha novamente" />
           </label>
-
+          <label class="form-field full">
+            Tipo de usuário
+            <select>
+              <option value="cliente">Cliente</option>
+              <option value="admin">Administrador</option>
+            </select>
+          </label>
         </div>
-        <div class="form-actions">
-          <RouterLink class="primary-button" to="/clientes">Entrar como cliente</RouterLink>
-          <RouterLink class="secondary-button" to="/admin/produtos">Entrar como admin</RouterLink>
+        <div class="form-actions" >
+          <RouterLink class="primary-button" to="/login">Cadastrar</RouterLink>
+        
+                 
         </div>
       </form>
     </section>

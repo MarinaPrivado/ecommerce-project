@@ -38,6 +38,16 @@ const router = createRouter({
       name: "clientes",
       component: () => import("@/views/novoClientes.vue"),
     },
+    {
+      path: "/:pathMatch(.*)*",
+      name: "notFound",
+      component: () => import("@/views/NotFound.vue"),
+    },
+    {
+      path: "/signup",
+      name: "signup",
+      component: () => import("@/views/signup.vue"),
+    }
   ],
 });
 

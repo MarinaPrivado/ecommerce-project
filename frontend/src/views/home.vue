@@ -96,7 +96,7 @@ const featuredProduct = products[0] as Product
       <div class="feature">
         <i class="pi pi-truck"></i>
         <div>
-          <strong>Frete gratis</strong>
+          <strong>Frete grátis</strong>
           <span>Acima de R$ 299</span>
         </div>
       </div>
@@ -149,7 +149,7 @@ const featuredProduct = products[0] as Product
       <div class="section-header">
         <div>
           <h2 class="section-title">Produtos em destaque</h2>
-          <p class="section-subtitle">Cards conectados as paginas de detalhes</p>
+          
         </div>
         <RouterLink class="secondary-button" to="/listagem">Ver vitrine</RouterLink>
       </div>

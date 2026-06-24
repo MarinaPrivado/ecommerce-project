@@ -168,10 +168,10 @@ const removeClient = (id: number) => {
             <select v-model="form.category">
               <option>Notebooks</option>
               <option>Smartphones</option>
-              <option>Perifericos</option>
+              <option>Periféricos</option>
               <option>Componentes</option>
-              <option>Audio</option>
-              <option>Acessorios</option>
+              <option>Áudio</option>
+              <option>Acessórios</option>
             </select>
           </label>
           

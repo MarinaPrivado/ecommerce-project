@@ -3,6 +3,7 @@ import { computed, ref } from 'vue'
 import { RouterLink } from 'vue-router'
 import { categories, formatCurrency, products } from '@/data/catalog'
 
+
 const search = ref('')
 const selectedCategory = ref('Todos')
 
