@@ -53,8 +53,7 @@ const removeClient = (id: number) => {
 </script>
 
 <template>
-  <main class="store-shell">
-    <section class="page-hero">
+  <section class="page-hero">
       <RouterLink class="ghost-button" to="/">
         <i class="pi pi-arrow-left"></i>
         Home
@@ -114,5 +113,4 @@ const removeClient = (id: number) => {
         
       
     </section>
-  </main> 
 </template>

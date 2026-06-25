@@ -11,14 +11,13 @@ const product = computed<Product>(
 </script>
 
 <template>
-  <main class="store-shell">
-    <section class="page-hero">
+  <section class="page-hero">
       <RouterLink class="ghost-button" to="/listagem">
         <i class="pi pi-arrow-left"></i>
         Voltar para vitrine
       </RouterLink>
       <h1>Detalhes do <span>produto</span></h1>
-      <p>Pagina de descricao, ficha tecnica e chamada para adicionar ao carrinho.</p>
+      <p>Pagina de descrição, ficha técnica e chamada para adicionar ao carrinho.</p>
     </section>
 
     <section class="page-section">
@@ -54,12 +53,9 @@ const product = computed<Product>(
               <i class="pi pi-shopping-cart"></i>
               Adicionar ao carrinho
             </RouterLink>
-            <RouterLink class="secondary-button" to="/admin/produtos">
-              Editar no admin
-            </RouterLink>
+           
           </div>
         </div>
       </article>
     </section>
-  </main>
 </template>

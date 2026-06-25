@@ -1,14 +1,19 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed, ref, onMounted } from 'vue'
 import { RouterLink } from 'vue-router'
-import { categories, formatCurrency, products } from '@/data/catalog'
-
+import { categories, formatCurrency, type Product } from '@/data/catalog'
+import { getProducts } from '@/data/api'
 
 const search = ref('')
 const selectedCategory = ref('Todos')
+const products = ref<Product[]>([])
+
+onMounted(async () => {
+  products.value = await getProducts()
+})
 
 const filteredProducts = computed(() =>
-  products.filter((product) => {
+  products.value.filter((product) => {
     const matchesSearch = product.name.toLowerCase().includes(search.value.toLowerCase())
     const matchesCategory =
       selectedCategory.value === 'Todos' || product.category === selectedCategory.value
@@ -19,17 +24,13 @@ const filteredProducts = computed(() =>
 </script>
 
 <template>
-  <main class="store-shell">
-    <section class="page-hero">
+  <section class="page-hero">
       <RouterLink class="ghost-button" to="/">
         <i class="pi pi-arrow-left"></i>
         Home
       </RouterLink>
       <h1>Vitrine de <span>produtos</span></h1>
-      <p>
-        Pagina estatica da etapa 1 com listagem, filtros visuais e navegacao
-        para detalhes e carrinho.
-      </p>
+      
     </section>
 
     <section class="page-section">
@@ -89,5 +90,4 @@ const filteredProducts = computed(() =>
         </article>
       </div>
     </section>
-  </main>
 </template>

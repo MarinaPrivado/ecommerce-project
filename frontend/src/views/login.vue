@@ -3,8 +3,7 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-  <main class="store-shell">
-    <section class="page-hero">
+  <section class="page-hero">
       <RouterLink class="ghost-button" to="/">
         <i class="pi pi-arrow-left"></i>
         Home
@@ -40,5 +39,4 @@ import { RouterLink } from 'vue-router'
         </div>
       </form>
     </section>
-  </main>
 </template>

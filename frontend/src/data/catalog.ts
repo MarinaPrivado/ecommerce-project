@@ -19,8 +19,9 @@ export type Client = {
   email: string
   phone: string
   status: 'Ativo' | 'Inativo'
+  document: string
   city: string
-  adress: string
+  address: string
 }
 
 export const categories = [
@@ -100,7 +101,9 @@ export const clients: Client[] = [
     email: 'ana.souza@email.com',
     phone: '(11) 98888-1200',
     status: 'Ativo',
+    document: '123.456.789-00',
     city: 'Sao Paulo',
+    address: 'Rua das Flores, 123',
   },
   {
     id: 2,
@@ -108,7 +111,9 @@ export const clients: Client[] = [
     email: 'carlos.lima@email.com',
     phone: '(21) 97777-3344',
     status: 'Ativo',
+    document: '987.654.321-00',
     city: 'Rio de Janeiro',
+    address: 'Av. Atlântica, 500',
   },
   {
     id: 3,
@@ -116,7 +121,9 @@ export const clients: Client[] = [
     email: 'bianca.rocha@email.com',
     phone: '(31) 96666-7788',
     status: 'Inativo',
+    document: '456.789.123-00',
     city: 'Belo Horizonte',
+    address: 'Rua dos Ipês, 200',
   },
 ]
 

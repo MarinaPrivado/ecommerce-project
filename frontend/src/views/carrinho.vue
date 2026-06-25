@@ -28,8 +28,7 @@ const decrease = (id: number) => {
 </script>
 
 <template>
-  <main class="store-shell">
-    <section class="page-hero">
+  <section class="page-hero">
       <RouterLink class="ghost-button" to="/listagem">
         <i class="pi pi-arrow-left"></i>
         Continuar comprando
@@ -77,5 +76,4 @@ const decrease = (id: number) => {
         </RouterLink>
       </aside>
     </section>
-  </main>
 </template>
