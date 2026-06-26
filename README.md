@@ -196,7 +196,13 @@ DB_PASSWORD=senha123
 ```env
 VITE_API_URL=http://localhost:8081/api
 ```
-
+---
+Usuários teste:
+Email: cliente@nexvolt.com
+senha: 123456
+ ou
+Email: admin@nexvolt.com
+senha: 123456
 ---
 
 ## Endpoints da API

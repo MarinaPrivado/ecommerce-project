@@ -43,18 +43,27 @@ export type ProductPayload = {
 
 export type ClientPayload = Omit<Client, 'id'>
 
+const getToken = (): string | null => localStorage.getItem('auth_token')
+
 const request = async <T>(path: string, options: RequestInit = {}): Promise<T> => {
+  const headers: Record<string, string> = {
+    Accept: 'application/json',
+    'Content-Type': 'application/json',
+  }
+
+  const token = getToken()
+  if (token) {
+    headers['Authorization'] = `Bearer ${token}`
+  }
+
   const response = await fetch(`${API_BASE_URL}${path}`, {
     ...options,
-    headers: {
-      Accept: 'application/json',
-      'Content-Type': 'application/json',
-      ...options.headers,
-    },
+    headers: { ...headers, ...(options.headers as Record<string, string> | undefined) },
   })
 
   if (!response.ok) {
-    throw new Error(`Erro ${response.status} ao acessar ${path}`)
+    const body = await response.json().catch(() => null)
+    throw new Error(body?.message || `Erro ${response.status} ao acessar ${path}`)
   }
 
   if (response.status === 204) {
@@ -62,6 +71,37 @@ const request = async <T>(path: string, options: RequestInit = {}): Promise<T> =
   }
 
   return response.json() as Promise<T>
+}
+
+export type LoginResponse = {
+  user: { id: number; name: string; email: string; role: 'admin' | 'client' }
+  token: string
+}
+
+export const login = async (email: string, password: string, role: string): Promise<LoginResponse> =>
+  request<LoginResponse>('/login', {
+    method: 'POST',
+    body: JSON.stringify({ email, password, role }),
+  })
+
+export const register = async (
+  name: string,
+  email: string,
+  password: string,
+  role: 'admin' | 'client' = 'client',
+): Promise<LoginResponse> =>
+  request<LoginResponse>('/register', {
+    method: 'POST',
+    body: JSON.stringify({ name, email, password, role }),
+  })
+
+export const logout = async (): Promise<void> => {
+  await request<null>('/logout', { method: 'POST' })
+}
+
+export const fetchUser = async (): Promise<LoginResponse['user']> => {
+  const res = await request<{ id: number; name: string; email: string; role: 'admin' | 'client' }>('/user')
+  return res
 }
 
 const toNumber = (value: string | number | null | undefined) =>

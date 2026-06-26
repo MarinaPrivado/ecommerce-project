@@ -15,6 +15,14 @@ class DatabaseSeeder extends Seeder
             'name' => 'Admin',
             'email' => 'admin@nexvolt.com',
             'password' => bcrypt('123456'),
+            'role' => 'admin',
+        ]);
+
+        User::factory()->create([
+            'name' => 'Cliente',
+            'email' => 'cliente@nexvolt.com',
+            'password' => bcrypt('123456'),
+            'role' => 'client',
         ]);
 
         Product::create([

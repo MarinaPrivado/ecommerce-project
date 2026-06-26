@@ -34,7 +34,7 @@ const decrease = (id: number) => {
         Continuar comprando
       </RouterLink>
       <h1>Carrinho de <span>compras</span></h1>
-      <p>Resumo visual da etapa 1 com quantidades, subtotal, frete e total.</p>
+      
     </section>
 
     <section class="page-section cart-layout">

@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
+import { useAuthStore } from '@/stores/auth'
 import logo from '@/img/nexvolt_logo.svg'
+
+const auth = useAuthStore()
 </script>
 
 <template>
@@ -22,7 +25,13 @@ import logo from '@/img/nexvolt_logo.svg'
       </div>
 
       <div class="store-actions">
-        <RouterLink class="icon-button" to="/login" aria-label="Login">
+        <template v-if="auth.isAuthenticated">
+          <span class="user-badge">{{ auth.user?.name }}</span>
+          <button class="icon-button" @click="auth.logout()" aria-label="Sair" title="Sair">
+            <i class="pi pi-sign-out"></i>
+          </button>
+        </template>
+        <RouterLink v-else class="icon-button" to="/login" aria-label="Login">
           <i class="pi pi-user"></i>
         </RouterLink>
         <RouterLink class="icon-button" to="/carrinho" aria-label="Carrinho">

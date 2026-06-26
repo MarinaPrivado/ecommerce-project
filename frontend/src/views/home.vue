@@ -28,7 +28,7 @@ onMounted(async () => {
             Ver produtos
             <i class="pi pi-arrow-right"></i>
           </RouterLink>
-          <RouterLink class="ghost-button" to="/admin/produtos">
+          <RouterLink class="ghost-button" to="/login">
             Área do administrador
             <i class="pi pi-arrow-right"></i>
           </RouterLink>
